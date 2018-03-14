@@ -1,4 +1,7 @@
-﻿.jumbotron,
+﻿body {
+  font-family: 'Roboto', sans-serif;
+}
+.jumbotron,
 .covertron {
   background-image: url('../images/talent_4real-world-degrees.jpg');
   background-size: cover;
@@ -17,9 +20,36 @@ footer {
   padding: 10rem 2rem;
   background-image: url('../images/footer.png');
 }
+@media (min-width: 320px) {
+  .hero {
+    font-size: 48pt;
+  }
+  .header1 {
+    font-size: 36pt;
+  }
+}
+@media (min-width: 767px) {
+  .hero {
+    font-size: 64pt;
+  }
+  .header1 {
+    font-size: 48pt;
+  }
+}
 @media screen and (max-width: 767px) {
   /* Hide captions */
   footer {
     background-image: url('../images/footer-mobile.png');
   }
+}
+.navcolor {
+  background-color: #ffffff;
+}
+a.nav-link {
+  color: #26118B !important;
+  font-size: 18pt;
+}
+.nav-link:hover {
+  color: #ffffff !important;
+  background-color: #2E12B5;
 }

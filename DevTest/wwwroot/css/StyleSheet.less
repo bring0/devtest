@@ -4,10 +4,17 @@
 @siteLightPurple: #2E12B5;
 @siteDarkPurple: #26118B;
 
-@hero: 64pt;
+@heroSize: 64pt;
+@heroSizeMobile: 48pt;
+
 @header1: 48pt;
+@header1Mobile: 36pt;
 
 @bannerPadding: 10rem 2rem;
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
 
 .coverings() {
     background-size: cover;
@@ -18,7 +25,6 @@
     background-image: url('../images/talent_4real-world-degrees.jpg');
    .coverings();
 }
-
 
 
 .display-3 {
@@ -35,7 +41,24 @@ footer {
     .coverings();
     background-image: url('../images/footer.png');
 }
+@media (min-width:320px) {
+    .hero {
+        font-size: @heroSizeMobile;
+    }
 
+    .header1 {
+        font-size: @header1Mobile;
+    }
+}
+@media (min-width:767px) {
+    .hero {
+        font-size: @heroSize;
+    }
+
+    .header1 {
+        font-size: @header1;
+    }
+}
 @media screen and (max-width: 767px) {
     /* Hide captions */
     footer {
@@ -43,8 +66,14 @@ footer {
     }
 }
 
-
-
-
-body {
+.navcolor{
+    background-color: @siteWhite;
+}
+a.nav-link{
+    color: @siteDarkPurple !important;
+    font-size: 18pt;
+}
+.nav-link:hover{
+    color: @siteWhite !important;
+    background-color: @siteLightPurple;
 }
