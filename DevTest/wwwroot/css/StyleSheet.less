@@ -1,0 +1,50 @@
+﻿@siteWhite: #ffffff;
+@siteGold: #FCC230;
+@siteTeal: #01D7D7;
+@siteLightPurple: #2E12B5;
+@siteDarkPurple: #26118B;
+
+@hero: 64pt;
+@header1: 48pt;
+
+@bannerPadding: 10rem 2rem;
+
+.coverings() {
+    background-size: cover;
+    padding: @bannerPadding;
+}
+
+.jumbotron, .covertron {
+    background-image: url('../images/talent_4real-world-degrees.jpg');
+   .coverings();
+}
+
+
+
+.display-3 {
+    text-align: center;
+    color: #ffffff;
+}
+
+.dotrow {
+    margin-top: -9.3rem;
+    margin-bottom: 9rem;
+}
+
+footer {
+    .coverings();
+    background-image: url('../images/footer.png');
+}
+
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    footer {
+        background-image: url('../images/footer-mobile.png');
+    }
+}
+
+
+
+
+body {
+}
